@@ -1,0 +1,221 @@
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue";
+}
+
+body {
+    background: rgb(178, 175, 160);
+    background: radial-gradient(circle, rgba(178, 175, 160, 1) 0%, rgba(154, 148, 137, 1) 56%, rgba(142, 134, 125, 1) 74%, rgba(114, 102, 97, 1) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#pageContainer {
+    background-color: white;
+    height: 90%;
+    width: 50%;
+    border-radius: 20px;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    padding-bottom: 0.2rem;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0.5rem;
+    flex-direction: column;
+}
+
+h1 {
+    max-width: 200px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+li {
+    padding: 0.5rem;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+li a::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    transform: scale(0);
+    transition: 0.7s;
+}
+
+li a:hover::after{
+    transform: scale(1);
+    
+}
+
+#littleTextTitle {
+    font-size: 2rem;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+h2 span {
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    max-width: 100%;
+    align-items: flex-start;
+    margin-left: 1rem;
+    color: black;
+}
+
+#accountData{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#accountData img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#hamburgerMenu{
+    font-size: 1.8rem;
+}
+
+#sideHeading{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-size: 2rem;
+    font-family: "Protest Revolution"
+}
+
+#sneakersImg{
+    width: 55%;
+}
+
+main > section{
+    display: flex;
+    width: 100%;
+}
+
+#sneakersTitle{
+    box-sizing: border-box;
+    padding: 3%;
+    text-align: center;
+}
+
+#sneakersText p{
+    font-size: 0.8rem;
+    
+}
+
+#sneakersText{
+    max-width: 16rem;
+    box-sizing: border-box;
+    padding: 0.8rem 1rem;
+    padding-top: 0;
+    text-align: center;
+}
+
+#yogaMatImg{
+    width: 53%;
+}
+
+#boxingGloves{
+    width: 155%;
+}
+
+#boxingGloves + p{
+    writing-mode: vertical-lr;
+    font-size: 1.37rem;
+}
+
+#tennisPart > p{
+    font-size: 1.6rem;
+    margin-top: -0.25rem;
+}
+
+#tennisPart > p strong{
+    margin-right: 0.1rem;
+    text-underline-offset: 0.3rem;
+}
+
+#tennisPart{
+    margin-left: 0.2rem;
+}
+
+#yogaMatImg{
+    width: 90%;
+}
+
+p strong {
+    text-decoration: underline;
+}
+
+
