@@ -1,25 +1,7 @@
-.protest-revolution-regular {
-    font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Bebas Neue";
-}
 
 body {
     background: white;
-    height: 100vh;
+height: 100%;
     width: 100%;
     display: flex;
     padding: 1rem;
@@ -32,7 +14,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     padding-bottom: 0.2rem;
 }
 
@@ -55,7 +37,7 @@ ul {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-
+    padding: 0;
 }
 
 li {
@@ -129,11 +111,16 @@ main * {
     box-sizing: border-box;
 }
 
+.flexMainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .formContainer {
     position: relative;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    width: 80%;
+    min-height: 600px;
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -160,6 +147,15 @@ main * {
 .contactForm {
     width: 50%;
     z-index: 2;
+}
+
+.socialMediaContainer i{
+font-size: 1.8rem;
+}
+
+.socialMediaContainer{
+display: flex;
+gap: 1rem;
 }
 
 form {
@@ -205,13 +201,13 @@ a {
 
 button {
     color: white;
-    background: red;
+    background:rgb(32, 32, 32);
     font-size: 12px;
     font-weight: bold;
     padding: 12px 55px;
     margin: 20px;
     border-radius: 20px;
-    border: 1px solid red;
+    border: 1px solid rgba(178, 175, 160, 1);
     outline: none;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -228,11 +224,11 @@ button:active {
     border: 2px solid white;
 }
 
-.formContainer.rightPanelActive .ourData {
+.formContainer.rightPanelActive .contactForm {
     transform: translateX(100%);
 }
 
-.formContainer.rightPanelActive .contactForm {
+.formContainer.rightPanelActive .ourData {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -249,7 +245,7 @@ button:active {
     z-index: 100;
 }
 
-.formContainer .rightPanelActive .overlayContainer {
+.formContainer.rightPanelActive .overlayContainer {
     transform: translateX(-100%);
 }
 
@@ -260,12 +256,12 @@ button:active {
     left: -100%;
     height: 100%;
     width: 200%;
-    background: linear-gradient(to right, blue, red);
+    background: radial-gradient(circle, rgba(178, 175, 160, 1) 0%, rgba(154, 148, 137, 1) 56%, rgba(142, 134, 125, 1) 74%, rgba(114, 102, 97, 1) 100%);
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
 }
 
-.formContainer .rightPanelActive .overlay {
+.formContainer.rightPanelActive .overlay {
     transform: translateX(50%);
 }
 
@@ -294,10 +290,10 @@ button:active {
     transform: translateX(0);
 }
 
-.formContainer .rightPanelActive .overlayLeft {
+.formContainer.rightPanelActive .overlayLeft {
     transform: translateX(0);
 }
 
-.formContainer .rightPanelActive .overlayRight {
+.formContainer.rightPanelActive .overlayRight {
     transform: translateX(20%);
 }
