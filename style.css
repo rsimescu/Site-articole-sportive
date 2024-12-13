@@ -218,4 +218,8 @@ p strong {
     text-decoration: underline;
 }
 
+#sneakersImg, #yogaMatImg, #boxingGloves {
+    max-width: 100%; 
+    height: auto; 
+}
 
