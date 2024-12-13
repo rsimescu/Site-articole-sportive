@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    caret-color:transparent;
 }
 
 
@@ -128,7 +128,7 @@ main * {
     width: 80%;
     min-height: 40rem;
     background: white;
-    border-radius: 0.625;
+    border-radius: 0.625rem;
     overflow: hidden;
     box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
     -webkit-box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
@@ -192,13 +192,13 @@ p {
 .inputContainer {
     position: relative;
     margin: 1.25rem 0;
-    width: 50%;
+    width: 75%;
 }
 
 .inputContainer label {
     position: absolute;
     top: 50%;
-    left: 1.5rem;
+    left: 0.5rem;
     transform: translateY(-50%);
     font-size: 1rem;
     padding: 0 0.313rem;
@@ -217,7 +217,7 @@ p {
 
 .inputContainer input:focus~label,
 .inputContainer input:valid~label {
-    top: 0.5rem;
+    top: 0;
     font-size: 0.7rem;
     background-color: white;
 }
@@ -225,7 +225,6 @@ p {
 input {
     background: #eee;
     padding: 0.75rem 0.938rem;
-    margin: 0.5 0.938rem;
     width: 100%;
     border-radius: 0.313rem;
     border: none;
@@ -528,15 +527,27 @@ iframe{
 
 @media screen and (min-width:1500px) {
     html{
-    font-size: 20px;
+    font-size: 25px;
     }
 }
 
 
 @media screen and (max-width:750px) {
     html{
-
+font-size: 8px;
     }
 
   
+}
+
+
+@media screen and (min-width:2500px) {
+    html{
+    font-size: 45px;
+    }
+
+    .formContainer{
+        
+    }
+
 }
