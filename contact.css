@@ -56,7 +56,7 @@ li a {
     color: black;
     position: relative;
     overflow: hidden;
-    padding: 10px;
+    padding: 0.625rem;
     box-sizing: border-box;
     font-size: 1.2rem;
 }
@@ -64,7 +64,7 @@ li a {
 li a::after {
     content: "";
     display: block;
-    height: 4px;
+    height: 0.25rem;
     width: 100%;
     background-color: black;
     transform: scale(0);
@@ -128,11 +128,11 @@ main * {
     width: 80%;
     min-height: 40rem;
     background: white;
-    border-radius: 10px;
+    border-radius: 0.625;
     overflow: hidden;
-    box-shadow: -40px -5px 57px -45px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: -40px -5px 57px -45px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -40px -5px 57px -45px rgba(0, 0, 0, 1);
+    box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
+    -moz-box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
 }
 
 .contactForm,
@@ -171,7 +171,7 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 3.125rem;
     height: 100%;
     text-align: center;
 }
@@ -182,16 +182,16 @@ h1 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 15px 0 20px;
+    line-height: 1.25rem;
+    letter-spacing: 0.031rem;
+    margin: 0.938rem 0 1.25rem;
 }
 
 .inputContainer {
     position: relative;
-    margin: 20px 0;
+    margin: 1.25rem 0;
     width: 50%;
 }
 
@@ -201,7 +201,7 @@ p {
     left: 1.5rem;
     transform: translateY(-50%);
     font-size: 1rem;
-    padding: 0 5px;
+    padding: 0 0.313rem;
     pointer-events: none;
     transition: 0.5s;
 }
@@ -209,47 +209,47 @@ p {
 .inputContainer input {
     background: transparent;
     color: #333;
-    height: 40px;
+    height: 2.5rem;
     font-size: 1rem;
     width: 100%;
-    border: 1.2px solid black;
+    border: 0.075rem solid black;
 }
 
 .inputContainer input:focus~label,
 .inputContainer input:valid~label {
-    top: 8px;
+    top: 0.5rem;
     font-size: 0.7rem;
     background-color: white;
 }
 
 input {
     background: #eee;
-    padding: 12px 15px;
-    margin: 8px 15px;
+    padding: 0.75rem 0.938rem;
+    margin: 0.5 0.938rem;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     border: none;
     outline: none;
 }
 
 a {
     color: #333;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: none;
-    margin: 15px 0;
+    margin: 0.938rem 0;
 }
 
 button {
     color: white;
     background: rgb(32, 32, 32);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
-    padding: 12px 55px;
-    margin: 20px;
-    border-radius: 20px;
-    border: 1px solid rgba(178, 175, 160, 1);
+    padding: 0.75rem 3.438rem;
+    margin: 1.25rem;
+    border-radius: 1.25rem;
+    border: 0.063rem solid rgba(178, 175, 160, 1);
     outline: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     text-transform: uppercase;
     transition: transform 88ms ease-in;
 }
@@ -261,7 +261,7 @@ button:active {
 .contactForm,
 .ourData {
     background-color: transparent;
-    border: 2px solid white;
+    border: 0.125rem solid white;
 }
 
 .formContainer.rightPanelActive .contactForm {
@@ -312,7 +312,7 @@ button:active {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 2.5rem;
     text-align: center;
     top: 0;
     height: 100%;
@@ -404,7 +404,7 @@ button:active {
     overflow: hidden;
     animation: typing 2s,
         cursor .4s step-end infinite alternate;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 @keyframes cursor {
@@ -429,7 +429,7 @@ footer {
 
 hr {
     border: none;
-    border-top: 1px solid rgb(174, 171, 157);
+    border-top: 0.063rem solid rgb(174, 171, 157);
 }
 
 .footerContainer {
@@ -473,7 +473,7 @@ hr {
 }
 
 .newsletterForm label {
-    left: 5px;
+    left: 0.313rem;
 }
 
 .newsletterForm input:focus~label,
@@ -528,7 +528,7 @@ iframe{
 
 @media screen and (min-width:1500px) {
     html{
-    
+    font-size: 20px;
     }
 }
 
@@ -538,6 +538,5 @@ iframe{
 
     }
 
-    *{
-    }
+  
 }
