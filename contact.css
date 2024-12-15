@@ -565,7 +565,7 @@ iframe {
     }
 
     .logosSlide{
-        animation: 30s;
+        animation: 20s slider infinite linear;
     }
 }
 
