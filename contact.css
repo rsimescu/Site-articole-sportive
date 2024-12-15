@@ -389,7 +389,7 @@ button:active {
 
 .logosSlide {
     display: inline-block;
-    animation: 8s slider infinite linear;
+    animation: 12s slider infinite linear;
 }
 
 .logosSlide img {
