@@ -124,6 +124,7 @@ main * {
 }
 
 .formContainer {
+    display: flex;
     position: relative;
     width: 80%;
     min-height: 40rem;
@@ -533,12 +534,34 @@ iframe {
 
 
 @media screen and (max-width:750px) {
+    body{
+        padding: 1.5rem;
+    }
+
     html {
         font-size: 8px;
     }
 
     .newsletterForm{
         padding: 0 0.5rem;
+    }
+
+    .newsletterForm input{
+        width: 100%;
+    }
+
+
+    .formContainer{
+        width: 100%;
+    }
+
+    #newsLetterEmail{
+        width: 100%;
+    }
+
+
+    #newsletterSubscribeBtn{
+        font-size: 0.5rem;
     }
 }
 
@@ -548,6 +571,8 @@ iframe {
         font-size: 45px;
     }
 
-    .formContainer {}
+    .formContainer {
+
+    }
 
 }
