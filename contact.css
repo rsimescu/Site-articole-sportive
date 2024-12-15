@@ -563,6 +563,10 @@ iframe {
     #newsletterSubscribeBtn{
         font-size: 0.5rem;
     }
+
+    .logosSlide{
+        animation: 18s;
+    }
 }
 
 
