@@ -3,7 +3,7 @@
     padding: 0;
     caret-color: transparent;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -120,11 +120,11 @@ h2 span {
     color: black;
 }
 
-.firstTitlePart{
+.firstTitlePart {
     font-size: 5rem;
 }
 
-.animatedTitlePart{
+.animatedTitlePart {
     font-size: 5rem;
 }
 
@@ -135,19 +135,19 @@ h2 span {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color:white;
+    background-color: white;
     border-left: 2px solid rgba(114, 102, 97, 1);
     animation: animate 5s infinite;
-}   
+}
 
-.storiesContainer{
+.storiesContainer {
     display: flex;
     text-align: center;
     justify-content: center;
     gap: 10%;
     margin: 2rem 0;
     box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 1);
-   }
+}
 
 
 .leftStory,
@@ -161,7 +161,7 @@ h2 span {
 }
 
 .leftStory h3,
-.rightStory h3{
+.rightStory h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,27 +169,22 @@ h2 span {
     font-size: 2rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background:white;
+    background: white;
 }
 
 .leftStory p,
-.rightStory p
-{
-  background-color: white;
-  color: rgb(129, 126, 112);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 1rem;
-  box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 1);
+.rightStory p {
+    background-color: white;
+    color: rgb(129, 126, 112);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 1);
     font-size: 1.2rem;
     line-height: 1.4rem;
 }
-
-
-
-
 
 footer {
     width: 100%;
@@ -260,7 +255,7 @@ hr {
     font-weight: 900;
 }
 
-main *{
+main * {
     box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
     -webkit-box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
     -moz-box-shadow: -2.5rem -0.313rem 3.563rem -2.813rem rgba(0, 0, 0, 1);
@@ -283,11 +278,38 @@ main *{
 
 
 @keyframes animate {
-    40%, 60%{
-        left:calc(100% + 0.25rem);
+
+    40%,
+    60% {
+        left: calc(100% + 0.25rem);
     }
 
-    100%{
+    100% {
         left: 0%;
     }
+}
+
+@media screen and (max-width:850px) {
+
+    .storiesContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+
+    .leftStory,
+    .rightStory {
+        width: 80%;
+        max-width: none;
+        font-size: 2rem;
+    }
+
+    .leftStory p,
+    .rightStory p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
 }
