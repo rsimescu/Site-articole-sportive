@@ -106,7 +106,8 @@ h2 span {
     overflow: hidden;
     padding-left: 1rem;
     width: 100%;
-    border-radius: 0.4rem;
+    border: 2.5px solid rgb(129, 126, 112);
+    border-radius: 17px;
 }
 
 .titleAnimationContainer .mainTitle {
