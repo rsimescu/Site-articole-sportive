@@ -287,28 +287,6 @@ hr {
     justify-content: flex-start;
 }
 
-.emailContactContainer,
-.adressContainer,
-.phoneContainer {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    text-align: left;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-}
-
-.iframeContainer {
-    width: 100%;
-    height: 40%;
-}
-
-.detailsContainer hr {
-    width: 100%;
-}
 
 @keyframes animate {
     40%, 60%{
