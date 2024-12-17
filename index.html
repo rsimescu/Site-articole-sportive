@@ -1,249 +1,77 @@
-.protest-revolution-regular {
-  font-family: "Protest Revolution", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hachi+Maru+Pop&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Protest+Revolution&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ActiveEdge</title>
+  </head>
+  <body>
+    <div id="sideHeading">ActiveEdge</div>
+    <div id="pageContainer">
+      <header>
+        <h2>Home</h2>
+        <div id="accountData">
+          <div id="cartIcon">
+            <img src="Assets/OIP (3).jpg" alt="Cart Icon" />
+          </div>
+          <div id="accountImg">
+            <img src="Assets/OIP (2).jpg" alt="Account Icon" />
+          </div>
+          <div id="hamburgerMenu">&#8801;</div>
+        </div>
+      </header>
 
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+      <nav>
+        <ul>
+          <li id="aboutUsLink"><a href="aboutUs.html">About Us</a></li>
+          <li id="contactLink"><a href="contact.html">Contact</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </nav>
 
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Bebas Neue";
-}
-
-body {
-  background: rgb(178, 175, 160);
-  background: radial-gradient(circle, rgba(178, 175, 160, 1) 0%, rgba(154, 148, 137, 1) 56%, rgba(142, 134, 125, 1) 74%, rgba(114, 102, 97, 1) 100%);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#pageContainer {
-  background-color: white;
-  height: 32rem;
-  width: 34.375rem;
-  border-radius: 1.25rem;
-  padding: 0.3rem;
-  box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  padding-bottom: 0.2rem;
-}
-
-header div {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 0.5rem;
-  flex-direction: column;
-}
-
-h1 {
-  max-width: 12.5rem;
-  text-align: center;
-  font-size: 2.5rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  border-radius: 0.625rem;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-
-}
-
-li {
-  padding: 0.5rem;
-  transition: 1s;
-  display: flex;
-  justify-content: center;
-}
-
-li a {
-  text-decoration: none;
-  color: black;
-  position: relative;
-  overflow: hidden;
-  padding: 0.625rem;
-  box-sizing: border-box;
-}
-
-li a::after {
-  content: "";
-  display: block;
-  height: 0.25rem;
-  width: 100%;
-  background-color: black;
-  transform: scale(0);
-  transition: 0.7s;
-}
-
-li a:hover::after {
-  transform: scale(1);
-
-}
-
-#littleTextTitle {
-  font-size: 2rem;
-}
-
-h2 {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: 1.2rem;
-}
-
-h2 span {
-  font-size: 1rem;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  align-items: flex-start;
-  margin-left: 1rem;
-  color: black;
-}
-
-#accountData {
-  display: flex;
-  gap: 0.5rem;
-}
-
-#accountData img {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-}
-
-#hamburgerMenu {
-  font-size: 1.8rem;
-}
-
-#sideHeading {
-  position: absolute;
-  left: 5%;
-  top: 10%;
-  font-size: 2rem;
-  font-family: "Protest Revolution"
-}
-
-#sneakersImg {
-  width: 19rem;
-}
-
-main>section {
-  display: flex;
-}
-
-#sneakersTitle {
-  box-sizing: border-box;
-  padding: 0.1rem;
-  text-align: center;
-}
-
-#sneakersText p {
-  font-size: 0.79rem;
-
-}
-
-#sneakersText {
-  max-width: 16rem;
-  box-sizing: border-box;
-  padding: 0.8rem 1rem;
-  padding-top: 0;
-  text-align: center;
-}
-
-
-#boxingGloves {
-  width: 12.5rem;
-}
-
-#boxingGloves+p {
-  writing-mode: vertical-lr;
-  font-size: 1.37rem;
-}
-
-#tennisPart>p {
-  font-size: 1.33rem;
-  margin-top: -0.25rem;
-}
-
-#tennisPart>p strong {
-  margin-right: 0.1rem;
-  text-underline-offset: 0.3rem;
-}
-
-#tennisPart {
-  margin-left: 0.2rem;
-}
-
-
-
-p strong {
-  text-decoration: underline;
-}
-
-#sneakersImg,
-#yogaMatImg,
-#boxingGloves {
-  height: auto;
-}
-
-#yogaMatImg {
-  width: 17.5rem;
-  height: 11rem;
-}
-
-@media screen and (max-width: 900px) {
-  html {
-      font-size: 11px;
-  }
-
-  #sideHeading {
-      left: 50%;
-      transform: translateX(-50%);
-  }
-}
-
-@media screen and (max-height: 400px) {
-  html {
-      font-size: 11px;
-  }
-
-  #sideHeading {
-      left: 10%;
-  }
-}
-
-
-@media screen and (max-width: 500px) {
-  html {
-      font-size: 10px;
-  }
-}
+      <main>
+        <section>
+          <div id="sneakersImg">
+            <img
+              src="Assets/3549d095-3cc8-420f-a4e0-08208a404f95.webp"
+              width="100%"
+            />
+          </div>
+          <div id="sneakersText">
+            <div id="sneakersTitle">
+              Every step takes you closer to your <strong>goals</strong>
+            </div>
+            <p>
+              "Sports are more than just movement—they're a testament to
+              discipline, passion, and resilience. Every step, every lift, every
+              stride is a building block toward greatness. With the right
+              mindset and the right gear, there's no limit to what you can
+              achieve. Let your journey begin today—because every champion
+              starts somewhere."
+            </p>
+          </div>
+        </section>
+        <section>
+          <div id="boxingGloves">
+            <img src="Assets/WhiteBoxingGloves.webp" width="100%"  alt="" />
+          </div>
+          <p>Unleash Your Inner <strong>Fighter</strong></p>
+          <div id="tennisPart">
+             <p><strong> Master</strong> Your Game, One Swing at a Time!</p>
+          <div id="yogaMatImg"><img src="Assets//tennis.jpg" width="100%"
+            height="100%"/></div>
+         </div>
+        </section>
+      </main>
+    </div>
+    <script src=""></script>
+  </body>
+</html>
