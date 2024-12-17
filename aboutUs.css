@@ -1,9 +1,16 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 * {
     margin: 0;
     padding: 0;
     caret-color: transparent;
     box-sizing: border-box;
-
+    font-family: "Bebas Neue";
 }
 
 
@@ -120,12 +127,10 @@ h2 span {
     color: black;
 }
 
-.firstTitlePart {
-    font-size: 5rem;
-}
-
+.firstTitlePart,
 .animatedTitlePart {
     font-size: 5rem;
+    box-shadow: none;
 }
 
 .mainTitle.animatedTitlePart::before {
@@ -276,6 +281,26 @@ main * {
     justify-content: flex-start;
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.story:nth-child(1){
+    transition-delay:200ms ;
+}
+
+.story:nth-child(2){
+    transition-delay:400ms ;
+}
 
 @keyframes animate {
 

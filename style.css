@@ -2,15 +2,15 @@
     font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .bebas-neue-regular {
+.bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -24,15 +24,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
 }
 
 #pageContainer {
     background-color: white;
-    height: 90%;
-    width: 50%;
-    border-radius: 20px;
+    height: 32rem;
+    width: 34.375rem;
+    border-radius: 1.25rem;
     padding: 0.3rem;
     box-sizing: border-box;
 }
@@ -45,7 +43,7 @@ header {
     padding-bottom: 0.2rem;
 }
 
-header div{
+header div {
     display: flex;
     align-items: center;
 }
@@ -58,13 +56,13 @@ nav {
 }
 
 h1 {
-    max-width: 200px;
+    max-width: 12.5rem;
     text-align: center;
     font-size: 2.5rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 ul {
@@ -88,23 +86,23 @@ li a {
     color: black;
     position: relative;
     overflow: hidden;
-    padding: 10px;
+    padding: 0.625rem;
     box-sizing: border-box;
 }
 
-li a::after{
+li a::after {
     content: "";
     display: block;
-    height: 4px;
+    height: 0.25rem;
     width: 100%;
     background-color: black;
     transform: scale(0);
     transition: 0.7s;
 }
 
-li a:hover::after{
+li a:hover::after {
     transform: scale(1);
-    
+
 }
 
 #littleTextTitle {
@@ -126,28 +124,27 @@ main {
     display: flex;
     flex-direction: column;
     text-align: start;
-    max-width: 100%;
     align-items: flex-start;
     margin-left: 1rem;
     color: black;
 }
 
-#accountData{
+#accountData {
     display: flex;
     gap: 0.5rem;
 }
 
-#accountData img{
-    width: 24px;
-    height: 24px;
+#accountData img {
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
 }
 
-#hamburgerMenu{
+#hamburgerMenu {
     font-size: 1.8rem;
 }
 
-#sideHeading{
+#sideHeading {
     position: absolute;
     left: 5%;
     top: 10%;
@@ -155,27 +152,26 @@ main {
     font-family: "Protest Revolution"
 }
 
-#sneakersImg{
-    width: 55%;
+#sneakersImg {
+    width: 19rem;
 }
 
-main > section{
+main>section {
     display: flex;
-    width: 100%;
 }
 
-#sneakersTitle{
+#sneakersTitle {
     box-sizing: border-box;
-    padding: 3%;
+    padding: 0.1rem;
     text-align: center;
 }
 
-#sneakersText p{
-    font-size: 0.8rem;
-    
+#sneakersText p {
+    font-size: 0.79rem;
+
 }
 
-#sneakersText{
+#sneakersText {
     max-width: 16rem;
     box-sizing: border-box;
     padding: 0.8rem 1rem;
@@ -183,43 +179,54 @@ main > section{
     text-align: center;
 }
 
-#yogaMatImg{
-    width: 53%;
+
+#boxingGloves {
+    width: 12.5rem;
 }
 
-#boxingGloves{
-    width: 155%;
-}
-
-#boxingGloves + p{
+#boxingGloves+p {
     writing-mode: vertical-lr;
     font-size: 1.37rem;
 }
 
-#tennisPart > p{
-    font-size: 1.6rem;
+#tennisPart>p {
+    font-size: 1.33rem;
     margin-top: -0.25rem;
 }
 
-#tennisPart > p strong{
+#tennisPart>p strong {
     margin-right: 0.1rem;
     text-underline-offset: 0.3rem;
 }
 
-#tennisPart{
+#tennisPart {
     margin-left: 0.2rem;
 }
 
-#yogaMatImg{
-    width: 90%;
-}
+
 
 p strong {
     text-decoration: underline;
 }
 
-#sneakersImg, #yogaMatImg, #boxingGloves {
-    max-width: 100%; 
-    height: auto; 
+#sneakersImg,
+#yogaMatImg,
+#boxingGloves {
+    height: auto;
 }
 
+#yogaMatImg {
+    width: 17.5rem;
+    height: 11rem;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 12px;
+    }
+
+    #sideHeading {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
