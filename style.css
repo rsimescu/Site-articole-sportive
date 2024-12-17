@@ -233,7 +233,8 @@ p strong {
 
 @media screen and (max-height: 400px) {
     html {
-        font-size: 11px;
+        font-size: 9px;
+        height: 100svh;
     }
 
     #sideHeading {
